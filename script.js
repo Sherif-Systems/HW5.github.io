@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var resultContainer = document.getElementById('result');
 
   fetchButton.addEventListener('click', function() {
-    fetch('http://127.0.0.1:3000/degrees.json')
+    fetch('degrees.json')
       .then(function(response) {
         if (response.ok) {
           return response.json();
