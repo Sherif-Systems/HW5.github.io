@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var resultContainer = document.getElementById('result');
 
   fetchButton.addEventListener('click', function() {
-    fetch('degrees.json')
+    fetch('https://sherif-systems.github.io/hw5.github.io/degrees.json')
       .then(function(response) {
         if (response.ok) {
           return response.json();
